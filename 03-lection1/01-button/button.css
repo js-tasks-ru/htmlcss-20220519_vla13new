@@ -1,1 +1,75 @@
 /* Стилизация кнопки */
+
+.btn {
+    width: 189px;
+    height: 48px;
+
+    background: var(--blue);
+    border-radius: 8px;
+    border: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: center;
+
+    color: var(--white);
+
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.btn--secondary {
+    background: var(--purple);
+}
+
+.btn--alternate {
+    background: none;
+    border: 1px solid var(--grey-3);
+    color: var(--grey-4);
+}
+
+
+.btn:hover, .btn--hover {
+    background-color: #2342C0;
+}
+
+.btn--secondary:hover, .btn--secondary.btn--hover {
+    background-color: #5028C6;
+}
+
+.btn--alternate:hover, .btn--alternate.btn--hover {
+    background: none;
+    border: 1px solid var(--black);
+}
+
+
+.btn:disabled, .btn--disabled {
+    opacity: 0.5;
+}
+
+.content-row__header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    /* Gray 3 */
+    color: var(--grey-3);
+}
+
+.container__header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+
+    color: var(--black);
+}
