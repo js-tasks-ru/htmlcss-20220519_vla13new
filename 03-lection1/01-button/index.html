@@ -4,8 +4,45 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./button.css">
+
+        <style>
+            .content-row__header {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+
+                color: var(--grey-3);
+            }
+
+            .container__header {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 38px;
+                line-height: 46px;
+
+                color: var(--black);
+            }
+        </style>
     </head>
     <body>
+        <div class="container">
+            <h1 class="container__header">Buttons</h1>
 
+            <div class="container-content">
+                <div class="content-row">
+                    <h2 class="content-row__header">Default</h2>
+
+                    <button type="button" class="btn">Primary</button>
+                    <button type="button" class="btn btn--secondary">Seconadry</button>
+                    <button type="button" class="btn btn--alternate">Alternate</button>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
