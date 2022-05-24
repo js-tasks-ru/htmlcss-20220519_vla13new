@@ -1,7 +1,7 @@
 /* Стилизация кнопки */
 
 .btn {
-    width: 189px;
+    min-width: 189px;
     height: 48px;
 
     background: var(--blue);
@@ -18,6 +18,11 @@
 
     color: var(--white);
 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 57px;
+    padding-right: 57px;
+
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
@@ -31,45 +36,20 @@
     color: var(--grey-4);
 }
 
-
-.btn:hover, .btn--hover {
+.btn:hover {
     background-color: #2342C0;
 }
 
-.btn--secondary:hover, .btn--secondary.btn--hover {
+.btn--secondary:hover {
     background-color: #5028C6;
 }
 
-.btn--alternate:hover, .btn--alternate.btn--hover {
+.btn--alternate:hover {
     background: none;
     border: 1px solid var(--black);
 }
 
-
-.btn:disabled, .btn--disabled {
+.btn:disabled{
     opacity: 0.5;
-}
-
-.content-row__header {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
-    /* Gray 3 */
-    color: var(--grey-3);
-}
-
-.container__header {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 38px;
-    line-height: 46px;
-
-    color: var(--black);
+    pointer-events: none;
 }
