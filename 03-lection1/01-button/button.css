@@ -20,8 +20,8 @@
 
     padding-top: 15px;
     padding-bottom: 14px;
-    padding-left: 57px;
-    padding-right: 57px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
